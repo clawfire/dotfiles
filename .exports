@@ -19,3 +19,18 @@ export MANPAGER='less -X';
 
 # Always enable colored `grep` output.
 export GREP_OPTIONS='--color=auto';
+
+# Export default PATH
+export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+
+# Add rvm to PATH for scripting
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# Add Vagrant provider
+export VAGRANT_DEFAULT_PROVIDER=vmware_fusion
+
+# ssh
+export SSH_KEY_PATH="~/.ssh/id_rsa"
+
+# export man path
+export MANPATH="/usr/local/man:$MANPATH"

@@ -51,11 +51,14 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
-export MANPATH="/usr/local/man:$MANPATH"
+# Load the shell dotfiles, and then some:
+# * ~/.path can be used to extend `$PATH`.
+# * ~/.extra can be used for other settings you don’t want to commit.
+for file in ~/.{path,exports,aliases,functions,extra}; do
+    [ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
 
-# You may need to manually set your language environment
-export LANG=fr_FR.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -67,8 +70,7 @@ export LANG=fr_FR.UTF-8
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# ssh
-export SSH_KEY_PATH="~/.ssh/id_rsa"
+
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -78,6 +80,3 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 # Example aliases
 alias zshconfig="mate ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-export VAGRANT_DEFAULT_PROVIDER=vmware_fusion
