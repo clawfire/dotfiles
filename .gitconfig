@@ -93,6 +93,14 @@
 	# http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
 	precomposeunicode = false
 
+	# Sanitize input from distant repo. Usefull if you're on a Mac computer and your
+	# coworker are not.
+	autocrlf = input
+
+	# Log everything into a log file that let us debug in a more efficient way possible
+	# buggy rebase
+	logAllRefUpdates = true
+
 [color]
 
 	# Use colors in Git commands that are capable of colored output when
