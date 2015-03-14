@@ -2,7 +2,7 @@
 	"caret_extra_width": 2,
 	"caret_style": "phase",
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/User/SublimeLinter/Tomorrow-Night (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Tomorrow (SL).tmTheme",
 	"copy_with_empty_selection": false,
 	"drag_text": false,
 	"draw_minimap_border": true,
@@ -16,9 +16,11 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Origami",
+		"Vintage",
 		"Jedi - Python autocompletion",
-		"Vintage"
+		"Origami",
+		"Jekyll",
+		"Seti_UI"
 	],
 	"match_brackets_content": false,
 	"match_selection": false,
@@ -30,7 +32,7 @@
 	"scroll_speed": 5.0,
 	"show_full_path": false,
 	"sidebar_default": true,
-	"theme": "Seti.sublime-theme",
+	"theme": "Spacegray Light.sublime-theme",
 	"trim_trailing_white_space_on_save": true,
 	"word_wrap": false
 }
