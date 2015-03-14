@@ -45,7 +45,7 @@ HIST_STAMPS="dd.mm.yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(adb autoenv atom bower brew brew-cask bundler common-aliases docker encode64 extract gem git git-flow github gpg-agent npm node osx rvm sublime ssh-agent sudo textmate transfer vagrant zsh-reload)
+plugins=(adb atom bower brew brew-cask bundler common-aliases docker encode64 extract gem git git-flow github gpg-agent npm node osx rvm sublime ssh-agent sudo textmate transfer vagrant zsh-reload)
 
 source $ZSH/oh-my-zsh.sh
 
