@@ -250,4 +250,4 @@ function tre() {
 # `gi [something][,something]` for generating gitignore ( return content )
 # Project : `gi java,python >> .gitignore`
 # Global : `gi linux,eclipse >> ~/.gitignore_global`
-function gi() { curl -L -s https://www.gitignore.io/api/\$@ ;}
+function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
