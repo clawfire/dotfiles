@@ -27,10 +27,15 @@ export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 export PATH="$PATH:$HOME/.rvm/bin"
 
 # Add Vagrant provider
-export VAGRANT_DEFAULT_PROVIDER=vmware_fusion
+export VAGRANT_DEFAULT_PROVIDER="vmware_fusion"
 
 # ssh
 export SSH_KEY_PATH="~/.ssh/id_rsa"
 
 # export man path
 export MANPATH="/usr/local/man:$MANPATH"
+
+#export nonde path
+export NODE_PATH="/usr/local/lib/node"
+export PATH="/usr/local/share/npm/bin:$PATH"
+
