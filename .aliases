@@ -111,7 +111,7 @@ alias plistbuddy="/usr/libexec/PlistBuddy"
 
 # Ring the terminal bell, and put a badge on Terminal.app’s Dock icon
 # (useful when executing time-consuming commands)
-alias badge="tput bel"
+alias badge="terminal-notifier -sound default -message $1"
 
 # Intuitive map function
 # For example, to list all directories that contain a certain file:
