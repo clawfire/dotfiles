@@ -68,6 +68,8 @@
 			git commit --amend -m \"$(git log -1 --pretty=%B)\n\nCloses #$1.\"; \
 		fi \
 	}; f"
+	
+	up = "pull --rebase --autostash --prune"
 
 [apply]
 
@@ -75,6 +77,8 @@
 	whitespace = fix
 
 [core]
+	# Use atom as editor because vim sucks
+	editor = atom --wait
 
 	# Use custom `.gitignore` and `.gitattributes`
 	excludesfile = ~/.gitignore
@@ -130,6 +134,21 @@
 
 	# Detect copies as well as renames
 	renames = copies
+	
+[difftool "sourcetree"]
+	# Use sourcetree as difftool
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	# Use sourcetree as mergetool
+	cmd = ~/Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+
+[filter "lfs"]
+	# LFS Config
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	required = true
 
 [help]
 
@@ -147,6 +166,10 @@
 	# installations. To use `simple` instead, add this to your `~/.extra` file:
 	# `git config --global push.default simple`. See http://git.io/mMah-w.
 	default = matching
+	
+[credential]
+	# Tell the OS to use the keychain to remember your passphrase
+	helper = osxkeychain
 
 # URL shorthands
 
