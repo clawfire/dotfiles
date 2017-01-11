@@ -87,12 +87,12 @@ brew cask install androidtool
 brew cask install anvil
 brew cask install atom
 brew cask install beardedspice
-brew cask install chefdk
+brew cask uninstall chefdk
 brew cask install cleanmymac
 brew cask install dropbox
-brew cask install firefox
+brew cask uninstall firefox
 brew cask install flashlight
-brew cask install github-desktop
+brew cask uninstall github-desktop
 brew cask install google-chrome
 brew cask install google-drive
 brew cask install imageoptim
@@ -100,7 +100,7 @@ brew cask install iterm2
 brew cask install java
 brew cask install liteicon
 brew cask install mou
-brew cask install opera
+brew cask uninstall opera
 brew cask install osxfuse
 brew cask install sequel-pro
 brew cask install skype
@@ -115,11 +115,11 @@ brew cask install the-unarchiver
 brew cask install toggldesktop
 brew cask install transmission
 brew cask install transmit
-brew cask install vagrant
-brew cask install virtualbox
-brew cask install vivaldi
+brew cask uninstall vagrant
+brew cask uninstall virtualbox
+brew cask uninstall vivaldi
 brew cask install vlc
-brew cask install vmware-fusion
+brew cask uninstall  vmware-fusion
 brew cask install xquartz
 brew cask install xscope
 
