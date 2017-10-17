@@ -163,5 +163,11 @@ alias nudgebig="defaults write ~/Library/Preferences/com.bohemiancoding.sketch3.
 # I'm so sleepy I'm gonna die
 alias gti="git"
 
+# Alias hub as git
+alias git="hub"
+
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+# Allow to update multiple sub repo with one command line
+alias febreze= 'find . -type d -name .git -exec zsh -c "cd \"{}\"/../ && pwd && git up" \;'
