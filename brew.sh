@@ -32,18 +32,11 @@ fi;
 # Install `wget` with IRI support.
 brew install wget --with-iri
 
-# Install RingoJS and Narwhal.
-# Note that the order in which these are installed is important;
-# see http://git.io/brew-narwhal-ringo.
-brew install ringojs
-brew install narwhal
-
 # Install more recent versions of some macOS tools.
 brew install vim --with-override-system-vi
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
-brew install homebrew/dupes/screen
-brew install homebrew/php/php56 --with-gmp
+brew install grep
+brew install openssh
+brew install screen
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -52,9 +45,8 @@ brew install sfnt2woff-zopfli
 brew install woff2
 
 # Install Android plateform tools like `fastboot`
-brew install android-platform-tools
-# Install Mackup to restore application settings
-brew install mackup
+brew tap caskroom/cask
+brew cask install android-platform-tools
 # Install other useful binaries.
 brew install ack
 # Install git versionning system and the helper for git-flow method.
@@ -69,17 +61,9 @@ brew install imagemagick --with-webp
 brew install webkit2png
 # Install crypto-terrorism stuff.
 brew install gpg-agent gnupg
-brew install keybase
 brew install tor
 # Install htop for osx.
 brew install htop-osx
-# Install uniform command tool for volume between different apps
-brew install beardedspice
-
-# Install some dev tools needed for my work.
-brew install mongodb
-brew install elasticsearch
-brew install mariadb
 
 # Install some so necessary tool (aka glitter)
 brew install archey
@@ -107,8 +91,6 @@ brew cask install betterzip
 brew cask install caffeine
 brew cask install caprine
 brew cask install cleanmymac
-brew cask install dash
-brew cask install duet
 brew cask install dropbox
 brew cask install evernote
 brew cask install font-anonymouspro-nerd-font-mono
@@ -133,38 +115,27 @@ brew cask install font-source-sans-pro
 brew cask install font-sourcecodepro-nerd-font
 brew cask install font-ubuntumono-nerd-font
 brew cask install google-chrome
-brew cask install google-drive
-brew cask install gpgtools
 brew cask install imageoptim
-brew cask install iterm2-beta
-brew cask install liteicon
+brew cask install iterm2
 brew cask install kaleidoscope
 brew cask install keybase
-brew cask install lingo
 brew cask install macdown
 brew cask install notion
 brew cask install nudgit
 brew cask install numi
-brew cask install postman
 brew cask install osxfuse
 brew cask install sequel-pro
-brew cask install skype-beta
 brew cask install sketch
 brew cask install soundcleod
 brew cask install soundcloud-downloader
 brew cask install spotify
-brew cask install sqwiggle
 brew cask install steam
-brew cask install telegram-desktop
 brew cask install textmate
 brew cask install the-unarchiver
-brew cask install toggldesktop
 brew cask install transmission
-brew cask install transmit
 brew cask install tunnelbear
 brew cask install vlc
 brew cask install whatsapp
-brew cask install xquartz
 brew cask install xscope
 
 # Remove outdated versions from the cellar.
